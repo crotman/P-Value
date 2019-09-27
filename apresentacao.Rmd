@@ -93,7 +93,6 @@ Algumas soluções são propostas, como coletar dados antes de analisar, listar 
 
 >"Pensé en un laberinto de laberintos, en un sinuoso laberinto creciente que abarcara el pasado y el porvenir y que implicara de algún modo los astros. Absorto en esas ilusorias imágenes, olvidé mi destino de perseguido. Me sentí, por un tiempo indeterminado, percibidor abstracto del mundo"[@Borges]
 
-Em "The garden of forking paths: Why multiple comparisons can be a problem, even when there is no “fishing expedition” or “p-hacking” and the research hypothesis was posited ahead of time" [@gelman2013garden], os autores defendem que mesmo sem um comportamento ativo do pesquisador buscando P-Values, os próprios caminhos que a pesquisa vai tomando de acordo com o que vai sendo descoberto nos dados leva a uma busca inconsciente pelo P-Value.
 
 
 ## Referências
