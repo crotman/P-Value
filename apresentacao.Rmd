@@ -1,0 +1,98 @@
+---
+title: "P-Value"
+author: "Bruno"
+date: "25/09/2019"
+output: slidy_presentation
+bibliography: bib.bib
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Definições
+
+Hipótese nula: uma afirmação que não traz novidades quando comparada a uma hipótese alternativa que postula algum grau de novidade, no contexto de um teste de significância [@everitt2010cambridge].
+
+P-Value: a probabilidade de dados observados apresentarem uma estatística de falta de aderência à hipótese nula tão ou mais extrema que a observada, considerando que estams em um universo onde a hipótese nula é verdadeira [@everitt2010cambridge].
+
+Formalmente:
+
+$$P(T(y^{rep}) > T(y)|H)$$
+
+Onde $H$ é a hipótese nula, $T()$ é uma função que calcula a aderência dos dados a $H$, $y$ são os dados usados no experimento analisado e $y^{rep}$ são dados vindos de uma replicação hipotética do experimento [@gelman2013commentary].
+
+
+## Erro de interpretação mais comum
+
+O erro de interpretação mais comum é considerar que o número representado pelo P-Value é a probabilidade de a hipótese nula ser verdadeira [@everitt2010cambridge].
+
+Isso não é verdade: a hipótese nula é verdadeira ou não, e isso é um fato determinístico sobre o universo. Só que é um fato não observável.
+
+Os óculos do cientista para avaliar se a hipótese é verdadeira são os dados do experimento, e eles mostram uma imagem estocástica imperfeita: se o cientista der azar, eles podem mostrar uma imagem enganosa, ou seja:
+
+* Uma aderência baixa dos dados à hipótese nula quando ela é verdadeira: Erro Tipo I
+
+* Uma aderência alta à hipótese nula quando a hipótese nula é falsa: Erro Tipo II
+
+Nada disso muda nada a respeito da validade da hipótese.
+
+
+## 20 William Bonners
+
+Imagine que dois candidatos a presidente estão empatados entre os eleitores e as pesquisas eleitorais são perfeitamente configuradas para uma margem de erro de 2% a um nível de tolerância de 95%. 
+
+De 20 William Bonners de universos paralelos onde a amostra da pesquisa foi sorteada, um deles vai dizer erroneamente que um candidato está na frente do outro fora da margem de erro.
+
+
+![](imagem/bonner.png){width=90%}
+
+
+## Outro erro de interpretação
+
+"Um P-value muito pequeno é igual a um efeito considerável"
+
+
+## Por que 0,05?
+
+>"The value for which P=0.05, or 1 in 20, is 1.96 or nearly 2; it is convenient to take this point as a limit in judging whether a deviation ought to be considered significant or not. Deviations exceeding twice the standard deviation are thus formally regarded as significant. Using this criterion we should be led to follow up a false indication only once in 22 trials, even if the statistics were the only guide available. Small effects will still escape notice if the data are insufficiently numerous to bring them out, but no lowering of the standard of significance would meet this difficulty."[@fisher1992statistical]
+
+![](imagem/Fisher.jpg){width=30%}
+
+
+Esse senhor respeitável, Sir Ronald Fisher, pai da estatística moderna achou o número de 0,05 pro P-Value bonitinho e conveniente pois significava 2 desvios-padrão no caso de uma variavel com distribuição normal.
+
+Até hoje o pessoal se fixou nisso
+
+
+## Tudo ou nada
+
+![](imagem/baggio.jpg){width=20%}
+
+Uma análise que encontre P-Value de 0,051 é estatisticamente significante e uma de 0,049, não
+
+## O único objetivo a ser buscado
+
+E existência de um objetivo tão importante assim acaba embotando os cientistas, que consideram que, atingido o objetivo, não é necessário fazer muita análise adicional antes de publicar
+
+![](imagem/retracted.png){width=20%}
+
+Os autores do artigo [@decety2015negative] foram descuidados com a sua análise, usando uma variável categórica como se fosse numérica.
+
+
+## Malandrão
+
+O artigo [@simmons2011false]
+
+
+## O labirinto de labirintos
+
+"Pensé en un laberinto de laberintos, en un sinuoso laberinto creciente que abarcara el pasado y el porvenir y que implicara de algún modo los astros. Absorto en esas ilusorias imágenes, olvidé mi destino de perseguido. Me sentí, por un tiempo indeterminado, percibidor abstracto del mundo"
+
+
+## Referências
+
+
+
+
